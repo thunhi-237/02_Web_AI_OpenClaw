@@ -91,32 +91,29 @@ p {
 
 @media (max-width: 768px) {
     .feature-grid {
-        gap: 10px;
-        margin-top: 20px;
+        gap: 8px;
+        margin-top: 15px;
     }
 
     .feature-card {
-        padding: 12px 15px;
-        gap: 12px;
-        align-items: flex-start;
-        /* Switch to top alignment for better text balance */
+        padding: 10px 15px;
+        gap: 10px;
+        align-items: center;
     }
 
     .feature-icon {
-        font-size: 24px;
-        /* Slightly smaller for better proportion */
-        margin-top: 3px;
-        /* Align with text top */
+        font-size: 20px;
+        margin-top: 0;
     }
 
     .feature-card h3 {
-        font-size: 18px;
-        margin-bottom: 4px;
+        font-size: 20px;
+        margin-bottom: 6px;
     }
 
     .feature-card p {
-        font-size: 15px;
-        line-height: 1.4;
+        font-size: 16px;
+        line-height: 1.6;
         text-align: justify;
     }
 }
@@ -189,31 +186,32 @@ p {
 
 @media (max-width: 768px) {
     .course-card-grid {
-        gap: 10px;
+        gap: 8px;
     }
 
     .course-card-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-        border-radius: 10px;
-        margin-top: 2px;
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        border-radius: 8px;
+        margin-top: 0;
     }
 
     .course-card {
-        padding: 12px 15px;
-        gap: 12px;
+        padding: 10px 15px;
+        gap: 10px;
+        align-items: center;
     }
 
     .course-card h2 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 4px;
     }
 
     .course-card .techniques-list li {
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 6px;
-        line-height: 1.4;
+        line-height: 1.5;
         text-align: justify;
     }
 }
@@ -536,7 +534,12 @@ section {
 
 @media (max-width: 768px) {
     section {
-        padding: 60px 0;
+        padding: 35px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 20px;
     }
 }
 

@@ -9,6 +9,193 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css?v=20260212">
+    <style>
+        @media (max-width: 768px) {
+
+            /* Tighten general spacing */
+            .real-scenarios,
+            .assistant-showcase,
+            .integration-power {
+                margin-top: 35px !important;
+            }
+
+            /* Assistant Showcase specific optimizations */
+            .assistant-showcase div[style*="grid"] {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+
+            .assistant-showcase div[style*="background: white"] {
+                padding: 12px !important;
+                border-radius: 10px !important;
+            }
+
+            .assistant-showcase strong {
+                font-size: 17px !important;
+            }
+
+            .assistant-showcase p {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+
+            .assistant-showcase i {
+                font-size: 18px !important;
+            }
+
+            /* Real Scenarios specific optimizations */
+            .real-scenarios div[style*="grid"] {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+
+            .real-scenarios div[style*="background: white"] {
+                padding: 20px !important;
+            }
+
+            .real-scenarios .section-title {
+                margin-bottom: 25px !important;
+            }
+
+            .real-scenarios div[style*="font-size: 40px"] {
+                font-size: 24px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .real-scenarios h3 {
+                font-size: 19px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .real-scenarios p {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+
+            .real-scenarios ul li {
+                font-size: 16px !important;
+                margin-bottom: 5px !important;
+            }
+
+            /* Integration Power specific optimizations */
+            .integration-power {
+                padding: 30px 15px !important;
+                border-radius: 20px !important;
+            }
+
+            .integration-power>div[style*="flex-direction: column"] {
+                gap: 15px !important;
+            }
+
+            /* Main container: Icon + Text Content */
+            .integration-power div[style*="gap: 30px"] {
+                flex-direction: row !important;
+                align-items: flex-start !important;
+                gap: 15px !important;
+                padding: 15px !important;
+            }
+
+            /* Inner container: Title + Description */
+            .integration-power div[style*="gap: 25px"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 8px !important;
+            }
+
+            /* Shrink icon wrapper and icon */
+            .integration-power div[style*="width: 60px"] {
+                width: 32px !important;
+                height: 32px !important;
+                font-size: 14px !important;
+                margin-top: 4px !important;
+                /* Align with title text */
+                border-radius: 10px !important;
+            }
+
+            .integration-power h4 {
+                font-size: 19px !important;
+                min-width: auto !important;
+                margin-bottom: 0 !important;
+            }
+
+            .integration-power p {
+                border-left: none !important;
+                border-top: none !important;
+                padding-left: 0 !important;
+                padding-top: 0 !important;
+                margin-top: 0 !important;
+                font-size: 16px !important;
+                line-height: 1.6 !important;
+            }
+
+            /* Course Details / Intro Box optimizations */
+            .course-content .container {
+                padding: 0 10px !important;
+            }
+
+            .intro-box {
+                padding: 20px 10px !important;
+                margin-top: 20px !important;
+            }
+
+            .course-card-grid {
+                margin-top: 15px !important;
+                gap: 10px !important;
+            }
+
+            .course-card {
+                padding: 15px !important;
+                gap: 12px !important;
+                border-radius: 12px !important;
+            }
+
+            .course-card-icon {
+                width: 38px !important;
+                height: 38px !important;
+                font-size: 16px !important;
+                border-radius: 10px !important;
+            }
+
+            .course-card h2 {
+                font-size: 19px !important;
+                margin-bottom: 5px !important;
+            }
+
+            .techniques-list {
+                padding-left: 15px !important;
+            }
+
+            .techniques-list li {
+                font-size: 16px !important;
+                margin-bottom: 6px !important;
+            }
+
+            /* CTA Button (Floating) shrinkage */
+            .cta-button#floating-cta {
+                padding: 12px 25px !important;
+                font-size: 15px !important;
+                bottom: 15px !important;
+                right: 15px !important;
+            }
+
+            /* Hero section tightening */
+            .hero {
+                padding: 60px 0 40px !important;
+            }
+
+            .hero-title {
+                font-size: 24px !important;
+            }
+
+            .hero-subtitle {
+                font-size: 16px !important;
+            }
+
+            .hero-note-content {
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -35,12 +222,14 @@
     <section class="hero" id="home">
         <div class="container">
             <h1 class="hero-title">Trợ Lý A.I Cá Nhân Hóa: Sử Dụng OpenClaw</h1>
-            <p class="hero-description">Không lý thuyết dài dòng, tràn lan.<br>Thành chuyên gia hoặc dừng sớm.<br>Xây
-                dựng trợ lý AI riêng cho công việc của bạn.</p>
+            <p class="hero-description">Không lý thuyết dài dòng, tràn lan.<br>Thành chuyên gia hoặc dừng sớm.<br>Tạo
+                nhiều trợ lý AI chuyên biệt làm việc thay bạn.</p>
             <div class="hero-note">
-                <p class="hero-note-content">Anh em có thể tạo ra trợ lý AI cá nhân hóa phục vụ chính công việc của mình
-                    chỉ trong thời gian rất ngắn <strong>(trên dưới 1 tháng)</strong> dù chưa có bất kỳ một chút kiến
-                    thức gì về AI hay lập trình trước đó.</p>
+                <p class="hero-note-content">OpenClaw là trợ lý AI mã nguồn mở chạy ngay trên máy tính của bạn.
+                    Bạn có thể tạo ra nhiều trợ lý khác nhau, mỗi trợ lý có workspace riêng. Tag trợ lý nào thì trợ lý
+                    đó làm việc -
+                    <strong>giống như add tất cả vào group Zalo vậy!</strong>
+                </p>
             </div>
             <a href="#register" class="cta-button">Đăng Ký Ngay</a>
         </div>
@@ -59,37 +248,91 @@
                     <div class="feature-card">
                         <div class="feature-icon icon-blue"><i class="fas fa-user-gear"></i></div>
                         <div class="feature-text">
-                            <h3>Cá Nhân Hóa Tối Đa</h3>
-                            <p>Xây dựng hệ thống AI thông minh, được huấn luyện riêng theo nhu cầu và dữ liệu đặc thù
-                                của chính bạn.</p>
+                            <h3>Nhiều Trợ Lý Chuyên Biệt</h3>
+                            <p>Tạo ra không giới hạn các trợ lý cho từng mục đích: <strong>@trolynhaclich</strong> quản
+                                lý thời gian,
+                                <strong>@thongtinson</strong> tra cứu dữ liệu. Mỗi trợ lý sở hữu một "bộ não"
+                                (workspace) và lịch sử riêng biệt,
+                                không bao giờ nhầm lẫn công việc.
+                            </p>
                         </div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon icon-green"><i class="fas fa-rocket"></i></div>
                         <div class="feature-text">
-                            <h3>Tăng Tốc Hiệu Suất</h3>
-                            <p>Tự động hóa các tác vụ lặp đi lặp lại. Tiết kiệm hàng trăm giờ làm việc mỗi năm để tập
-                                trung vào việc quan trọng.</p>
+                            <h3>Hệ Thống Tag Thông Minh</h3>
+                            <p>Trải nghiệm quản lý như add tất cả nhân viên giỏi nhất vào group Zalo. Chỉ cần tag
+                                <strong>@tên_trợ_lý</strong> và
+                                bạn đã kích hoạt ngay lập tức một chuyên gia thực hiện nhiệm vụ thay mình mà không cần
+                                hướng dẫn lại từ đầu.
+                            </p>
                         </div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon icon-orange"><i class="fas fa-brain"></i></div>
                         <div class="feature-text">
-                            <h3>Không Cần Lập Trình</h3>
-                            <p>OpenClaw cho phép bạn xây dựng trợ lý AI mạnh mẽ mà không cần viết code phức tạp. Chỉ cần
-                                hiểu logic và dữ liệu.</p>
+                            <h3>Mã Nguồn Mở & Chạy Local</h3>
+                            <p>OpenClaw hoạt động 100% trên máy tính của bạn. Dữ liệu kinh doanh, thông tin khách hàng
+                                nhạy cảm
+                                luôn tuyệt mật, không gửi lên cloud, không lo rò rỉ thông tin - một lợi thế tuyệt đối
+                                của mã nguồn mở.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="intro-content"
-                    style="background: transparent; padding: 0; border: none; margin-top: 20px; border-top: 1px solid rgba(0, 120, 106, 0.1); padding-top: 20px;">
-                    <p
-                        style="text-align: center; font-size: 20px; color: #00786a; font-weight: 500; margin: 0; padding-top: 0;">
-                        Khóa học OpenClaw được thiết kế phù hợp với tất cả mọi người, đặc biệt là những ai muốn ứng dụng
-                        AI vào công việc thực tế ngay lập tức.
+                    style="background: #f0f9f8; padding: 30px; border-radius: 12px; margin-top: 30px; border: 1px dashed #00786a;">
+                    <h4 style="text-align: center; color: #00786a; margin-bottom: 20px; font-size: 22px;">7 Ví Dụ Trợ Lý
+                        Bạn Có Thể Sở Hữu Ngay</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-id-card"></i> @trolykh:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Quản lý và phân loại tập khách hàng tiềm năng
+                                tự động từ các nguồn nhắn tin.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-file-invoice"></i> @trolybaocao:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Tự động tổng hợp doanh thu, chi phí và xuất
+                                file báo cáo cuối ngày định kỳ.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-globe"></i> @trolyweb:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Điều khiển trình duyệt, lấy dữ liệu giá đối thủ
+                                và thông tin thị trường 24/7.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-file-excel"></i> @trolyexcel:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Xử lý các bảng tính khổng lồ, làm sạch dữ liệu
+                                và thực hiện các hàm phức tạp thay bạn.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-project-diagram"></i> @trolyn8n:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Quản lý và kích hoạt các workflow tự động hóa
+                                n8n qua các câu lệnh tự nhiên.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-calendar-check"></i>
+                                @trolynhaclich:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Sắp xếp lịch họp, nhắc nhở deadline và quản lý
+                                danh sách công việc mỗi ngày.</p>
+                        </div>
+                        <div
+                            style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                            <strong style="color: #00786a;"><i class="fas fa-lightbulb"></i> @thongtinson:</strong>
+                            <p style="font-size: 16px; margin-top: 5px;">Kho tri thức nội bộ, trả lời mọi thắc mắc về
+                                quy trình và thông tin doanh nghiệp.</p>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 18px; color: #00786a; font-weight: 600; margin-top: 25px;">
+                        Bạn chỉ cần nhắn nhắn một câu - Trợ lý tương ứng sẽ hành động ngay!
                     </p>
                 </div>
             </div>
@@ -105,7 +348,7 @@
                     Nâng tầm sự nghiệp và tối ưu hiệu quả công việc với sức mạnh của AI</p>
             </div>
 
-            <div class="intro-box" style="margin-top: 40px; border-width: 1px; padding: 30px 40px;">
+            <div class="intro-box" style="margin-top: 40px; border-width: 1px;">
                 <div class="course-card-grid" style="margin-top: 0;">
                     <!-- Card 1: Cơ Hội & Thu Nhập -->
                     <div class="course-card">
@@ -117,10 +360,14 @@
                                 style="font-size: 22px; color: #00786a; margin-top: 0; margin-bottom: 8px; font-weight: 700;">
                                 Cơ Hội & Thu Nhập</h2>
                             <ul class="techniques-list">
-                                <li>Gia tăng lợi thế cạnh tranh trước nhà tuyển dụng.</li>
-                                <li>Deal mức lương cao hơn (25-30 triệu) khi có kỹ năng AI.</li>
-                                <li>Được săn đón bởi các doanh nghiệp đang chuyển đổi số.</li>
-                                <li>Nhận các dự án freelance xây dựng AI với thu nhập hấp dẫn.</li>
+                                <li><strong>Đột phá sự nghiệp:</strong> Gia tăng lợi thế cạnh tranh tuyệt đối trước các
+                                    ứng viên truyền thống.</li>
+                                <li><strong>Mức lương kỳ vọng:</strong> Tự tin deal mức lương cao hơn (25-30 triệu) khi
+                                    sở hữu "đội quân" trợ lý AI.</li>
+                                <li><strong>Thị trường khát nhân lực:</strong> Được săn đón bởi các doanh nghiệp đang
+                                    chuyển đổi số và ứng dụng AI.</li>
+                                <li><strong>Freelance High-ticket:</strong> Nhận các dự án xây dựng hệ thống trợ lý AI
+                                    cho đối tác với thu nhập hấp dẫn.</li>
                             </ul>
                         </div>
                     </div>
@@ -135,10 +382,14 @@
                                 style="font-size: 22px; color: #00786a; margin-top: 0; margin-bottom: 8px; font-weight: 700;">
                                 Quyền Lợi & Cam Kết</h2>
                             <ul class="techniques-list">
-                                <li>Hỗ trợ 24/7 trọn đời qua Zalo, Zoom, Teamviewer.</li>
-                                <li>Hỗ trợ việc làm sau khóa học.</li>
-                                <li>Cam kết làm được, không làm được hoàn tiền.</li>
-                                <li>Tiết kiệm tối đa chi phí và thời gian tự mày mò.</li>
+                                <li><strong>Hỗ trợ thực chiến:</strong> Đồng hành 24/7 trọn đời qua Zalo, Zoom,
+                                    Teamviewer cho đến khi bạn thành thạo.</li>
+                                <li><strong>Mạng lưới cơ hội:</strong> Kết nối và giới thiệu việc làm tại các đơn vị đối
+                                    tác sau khi hoàn thành khóa học.</li>
+                                <li><strong>Đảm bảo 100%:</strong> Cam kết "Cầm tay chỉ việc", nếu không làm được chúng
+                                    tôi sẵn sàng hoàn trả học phí.</li>
+                                <li><strong>Tối ưu lộ trình:</strong> Tiết kiệm hàng năm trời tự mày mò sai phương pháp
+                                    nhờ giáo trình thực tế.</li>
                             </ul>
                         </div>
                     </div>
@@ -153,10 +404,14 @@
                                 style="font-size: 22px; color: #00786a; margin-top: 0; margin-bottom: 8px; font-weight: 700;">
                                 Bạn Sẽ Nhận Được Gì</h2>
                             <ul class="techniques-list">
-                                <li>Tự xây dựng trợ lý AI cho bán hàng, chăm sóc khách hàng.</li>
-                                <li>Lắp ghép workflow tự động hóa và tích hợp API.</li>
-                                <li>Kỹ năng tư duy logic và giải quyết vấn đề hệ thống.</li>
-                                <li>Dự án thực tế để demo ngay cho khách hàng.</li>
+                                <li><strong>Multi-Assistant System:</strong> Tự xây dựng hệ thống nhiều trợ lý cho bán
+                                    hàng, CSKH và vận hành.</li>
+                                <li><strong>Antigravity Power:</strong> Kỹ năng điều khiển trình duyệt, lấy dữ liệu và
+                                    tạo ứng dụng web nhanh chóng.</li>
+                                <li><strong>Logic & Workflow:</strong> Tư duy hệ thống để lắp ghép các luồng tự động hóa
+                                    phức tạp qua API và n8n.</li>
+                                <li><strong>Showcase thực tế:</strong> Hoàn thiện bộ dự án AI cá nhân để demo và thuyết
+                                    phục khách hàng/cấp trên.</li>
                             </ul>
                         </div>
                     </div>
@@ -171,10 +426,14 @@
                                 style="font-size: 22px; color: #00786a; margin-top: 0; margin-bottom: 8px; font-weight: 700;">
                                 Đối Tượng Tham Gia</h2>
                             <ul class="techniques-list">
-                                <li>Người bận rộn muốn có trợ lý AI hỗ trợ công việc.</li>
-                                <li>Chủ doanh nghiệp, Freelancer muốn tối ưu vận hành.</li>
-                                <li>Dân văn phòng muốn chuyển hướng sang mảng AI.</li>
-                                <li>Người yêu thích công nghệ và muốn dẫn đầu xu hướng.</li>
+                                <li><strong>Người bận rộn:</strong> Muốn giải phóng bản thân khỏi các công việc lặp đi
+                                    lặp lại nhàm chán.</li>
+                                <li><strong>Chủ doanh nghiệp & Freelancer:</strong> Tối ưu đội ngũ, giảm chi phí vận
+                                    hành bằng nhân sự AI.</li>
+                                <li><strong>Dân văn phòng:</strong> Muốn nâng cấp kỹ năng để trở thành "ngôi sao" công
+                                    nghệ trong công ty.</li>
+                                <li><strong>Người tiên phong:</strong> Yêu công nghệ và không muốn bị bỏ lại trong cuộc
+                                    cách mạng AI lần này.</li>
                             </ul>
                         </div>
                     </div>
@@ -184,6 +443,126 @@
             <div class="warning-box" style="margin-top: 60px;">
                 <h3 style="text-align: center; color: #00786a; font-weight: 700;">Đừng để công nghệ bỏ lại phía sau. Hãy
                     biến AI thành nhân viên đắc lực nhất của bạn ngay hôm nay.</h3>
+            </div>
+
+            <!-- New Section: Real Scenarios -->
+            <div class="real-scenarios" style="margin-top: 80px;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">OpenClaw Trong Thực Tế</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <!-- Scenario 1 -->
+                    <div
+                        style="background: white; border-radius: 20px; padding: 35px; border: 1px solid #e0e0e0; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <div style="color: #00786a; font-size: 40px; margin-bottom: 20px;"><i class="fas fa-store"></i>
+                        </div>
+                        <h3 style="color: #00786a; margin-bottom: 15px; font-size: 22px;">Dành Cho Chủ Doanh Nghiệp</h3>
+                        <p style="font-style: italic; color: #666; margin-bottom: 15px;">"Tôi không thể tuyển thêm người
+                            vì chi phí cao, nhưng công việc thì quá nhiều."</p>
+                        <ul style="padding-left: 20px; color: #444;">
+                            <li style="margin-bottom: 8px;"><strong>Giải pháp:</strong> Tạo 3 trợ lý
+                                <strong>@trolydonhang</strong>, <strong>@trolykh</strong>,
+                                <strong>@trolybaocao</strong>.
+                            </li>
+                            <li style="margin-bottom: 8px;"><strong>Kết quả:</strong> Thay thế khối lượng công việc của
+                                1 nhân sự manual, tiết kiệm 15-20 giờ làm việc mỗi tuần.</li>
+                        </ul>
+                    </div>
+                    <!-- Scenario 2 -->
+                    <div
+                        style="background: white; border-radius: 20px; padding: 35px; border: 1px solid #e0e0e0; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <div style="color: #00786a; font-size: 40px; margin-bottom: 20px;"><i
+                                class="fas fa-laptop-code"></i></div>
+                        <h3 style="color: #00786a; margin-bottom: 15px; font-size: 22px;">Dành Cho Freelancer</h3>
+                        <p style="font-style: italic; color: #666; margin-bottom: 15px;">"Tôi mất quá nhiều thời gian đi
+                            lấy dữ liệu từ website đối thủ để làm báo cáo cho khách."</p>
+                        <ul style="padding-left: 20px; color: #444;">
+                            <li style="margin-bottom: 8px;"><strong>Giải pháp:</strong> Sử dụng
+                                <strong>@trolyweb</strong> kết hợp <strong>Antigravity</strong> để cào dữ liệu tự động.
+                            </li>
+                            <li style="margin-bottom: 8px;"><strong>Kết quả:</strong> Tự động hóa 80% quy trình thu thập
+                                dữ liệu, trả báo cáo cho khách chỉ trong vài giây.</li>
+                        </ul>
+                    </div>
+                    <!-- Scenario 3 -->
+                    <div
+                        style="background: white; border-radius: 20px; padding: 35px; border: 1px solid #e0e0e0; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <div style="color: #00786a; font-size: 40px; margin-bottom: 20px;"><i
+                                class="fas fa-user-tie"></i></div>
+                        <h3 style="color: #00786a; margin-bottom: 15px; font-size: 22px;">Dành Cho Nhân Viên Văn Phòng
+                        </h3>
+                        <p style="font-style: italic; color: #666; margin-bottom: 15px;">"Mỗi ngày tôi phải làm sạch
+                            hàng ngàn dòng Excel một cách thủ công để làm báo cáo."</p>
+                        <ul style="padding-left: 20px; color: #444;">
+                            <li style="margin-bottom: 8px;"><strong>Giải pháp:</strong> Dùng
+                                <strong>@trolyexcel</strong> viết hàm và xử lý dữ liệu tự động theo yêu cầu.
+                            </li>
+                            <li style="margin-bottom: 8px;"><strong>Kết quả:</strong> Công việc lặp lại 2 tiếng mỗi sáng
+                                giờ chỉ mất chưa đầy 10 phút để hoàn thành.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Section: Integration Power -->
+            <div class="integration-power"
+                style="margin-top: 100px; padding: 60px; background: linear-gradient(135deg, #f0f9f8 0%, #ffffff 100%); border-radius: 30px; border: 1px solid rgba(0, 120, 106, 0.1);">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 class="section-title" style="text-align: center; display: inline-block;">Sức Mạnh Kết Hợp:
+                        OpenClaw + Antigravity</h2>
+                    <p
+                        style="color: #444; font-size: 19px; margin: 20px auto 0; font-style: italic; max-width: 700px; line-height: 1.6; opacity: 0.9;">
+                        "Khi hai <span style="color: #00786a; font-weight: 700; font-style: normal;">siêu trí tuệ</span>
+                        bắt tay, giới hạn công việc của bạn sẽ bị xóa bỏ."</p>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 25px;">
+                    <!-- Item 1 -->
+                    <div
+                        style="display: flex; align-items: center; gap: 30px; background: rgba(255,255,255,0.7); padding: 25px; border-radius: 20px; transition: transform 0.3s ease;">
+                        <div
+                            style="background: rgba(33, 150, 243, 0.1); color: #2196F3; width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 24px;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 25px; flex-grow: 1;">
+                            <h4 style="color: #00786a; font-size: 19px; margin: 0; min-width: 220px; font-weight: 700;">
+                                Điều Khiển Website Tự Động</h4>
+                            <p
+                                style="font-size: 16px; color: #666; margin: 0; border-left: 2px solid rgba(0, 120, 106, 0.1); padding-left: 25px;">
+                                OpenClaw ra lệnh cho Antigravity truy cập các website bất kỳ, nhấp chuột, điền form và
+                                trích xuất dữ liệu hoàn toàn tự động theo lịch trình bạn cài đặt.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        style="display: flex; align-items: center; gap: 30px; background: rgba(255,255,255,0.7); padding: 25px; border-radius: 20px; transition: transform 0.3s ease;">
+                        <div
+                            style="background: rgba(255, 152, 0, 0.1); color: #FF9800; width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 24px;">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 25px; flex-grow: 1;">
+                            <h4 style="color: #00786a; font-size: 19px; margin: 0; min-width: 220px; font-weight: 700;">
+                                Tạo Ứng Dụng Trong Phút Chốc</h4>
+                            <p
+                                style="font-size: 16px; color: #666; margin: 0; border-left: 2px solid rgba(0, 120, 106, 0.1); padding-left: 25px;">
+                                Bạn chỉ cần mô tả qua câu lệnh, OpenClaw sẽ phối hợp cùng Antigravity viết code và dựng
+                                lên những landing page hoặc công cụ web hoàn chỉnh mà không cần lập trình.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        style="display: flex; align-items: center; gap: 30px; background: rgba(255,255,255,0.7); padding: 25px; border-radius: 20px; transition: transform 0.3s ease;">
+                        <div
+                            style="background: rgba(156, 39, 176, 0.1); color: #9C27B0; width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 24px;">
+                            <i class="fas fa-diagram-project"></i>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 25px; flex-grow: 1;">
+                            <h4 style="color: #00786a; font-size: 19px; margin: 0; min-width: 220px; font-weight: 700;">
+                                Vận Hành Siêu Luồng n8n</h4>
+                            <p
+                                style="font-size: 16px; color: #666; margin: 0; border-left: 2px solid rgba(0, 120, 106, 0.1); padding-left: 25px;">
+                                Kết nối hàng trăm ứng dụng khác nhau qua n8n. OpenClaw đóng vai trò là "quản lý trung
+                                tâm" điều phối các luồng chạy này qua các câu tag đơn giản.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -308,7 +687,7 @@
     <!-- Contact Section -->
     <footer class="footer" id="contact">
         <div class="container">
-            <h2>Trợ Lý A.I Cá Nhân Hóa Với OpenClaw</h2>
+            <h2>Tự Động Hóa Cuộc Sống Với AI</h2>
             <h3 class="footer-motto">Cứ ứng dụng vào công việc đi,<br>vướng thì gỡ</h3>
             <div class="contact-info">
                 <p><strong>Công Ty TNHH Anh Lập Trình</strong></p>
